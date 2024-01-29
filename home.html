@@ -9,21 +9,55 @@
 </head>
 
 <body>
-  <div class=e1_3>
-    <span class="e2_9">~제목~</span>
-    <div class="e2_11"></div>
-    <div class="e2_12"></div><span class="e2_19">회원관리</span>
-    <div class="e2_26"></div><span class="e2_27">검색</span>
-    <div class="e2_28"></div><span class="e2_29">정렬순서</span><span class="e2_30">이름</span><span
-      class="e2_32">생년월일</span><span class="e2_33">가입일</span><span class="e2_34">회원권만료일</span><span
-      class="e2_63">잔여횟수권</span><span class="e2_68">회원상태</span><span class="e2_35">1 홍길동 1999.09.01 2024,01.01
-      2024.03.01 회원
-      2 홍길동 1999.09.01 2024,01.01 7회 회원
-      3 홍길동 1999.09.01 2024,01.01 2024.03.01 회원
-      4 홍길동 1999.09.01 2024,01.01 2024.01.31 만료</span>
-    <div class="e2_67"></div>
-    <div class="e2_73"></div><span class="e2_72">회원등록</span>
-  </div>
+    <header class="title">
+      <h1>클라이밍 회원 관리 시스템</h1>
+    </header>
+    <div class="container">
+      <nav>
+        <span class="pageName">회원관리</span>
+        <button type="sumbit" class="signUp">신규회원등록</button>
+        <input type="sumbit" class="search">
+        <button type="sumbit" class="searchBtn">검색</button>
+        <hr class ="hr1">
+      </nav>
+      <section>
+        <div class="secContainer">
+          <table>
+            <thead>
+              <tr>
+                <th>정렬순서</th>
+                <th>이름</th>
+                <th>생년월일</th>
+                <th>가입일</th>
+                <th>회원권만료일</th>
+                <th>잔여횟수권</th>
+                <th>회원상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>홍길동</td>
+                <td>1999.09.01</td>
+                <td>2024.03.01</td>
+                <td>2024.03.31</td>
+                <td></td>
+                <td>회원</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>홍길동</td>
+                <td>1999.09.01</td>
+                <td>2024.03.01</td>
+                <td>2024.03.31</td>
+                <td></td>
+                <td>회원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+      </section>
 </body>
 
 </html>
