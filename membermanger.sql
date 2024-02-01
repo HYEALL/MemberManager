@@ -1,5 +1,6 @@
--- Active: 1706606808596@@127.0.0.1@3306@membermanger
+-- Active: 1706606808596@@127.0.0.1@3306@membermanager
 
+USE membermanager; 
 CREATE TABLE Member
 ( 
 ID INT PRIMARY KEY,

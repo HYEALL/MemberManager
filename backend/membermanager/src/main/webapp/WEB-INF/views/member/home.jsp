@@ -1,21 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MemberManger</title>
-  <link rel="stylesheet" href="css/home.css">
+  <title>membermanager</title>
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
 </head>
 
 <body>
     <header>
-      <h1 class="title"><a href="#"><img src="img/aclimb.png"></a></h1>
+      <h1 class="title"><a href="#"><img src="/img/aclimb.png"></a></h1>
     </header>
     <div class="container">
       <nav>
         <span class="pageName">회원관리</span>
-        <a href="detail.html"><button type="sumbit" class="signUp">신규회원등록</button></a>
+        <a href="detail.jsp"><button type="sumbit" class="signUp">신규회원등록</button></a>
         <input type="sumbit" class="search">
         <button type="sumbit" class="searchBtn">검색</button>
         <hr class ="hr1">
@@ -35,24 +37,17 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>홍길동</td>
-                <td>1999.09.01</td>
-                <td>2024.03.01</td>
-                <td>2024.03.31</td>
-                <td></td>
-                <td>회원</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>홍길동</td>
-                <td>1999.09.01</td>
-                <td>2024.03.01</td>
-                <td>2024.03.31</td>
-                <td></td>
-                <td>회원</td>
-              </tr>
+              <c:forEach var="member" items="${ members }">
+                <tr>
+                  <td>${ member.id }</td>
+                  <td>${ member.name }</td>
+                  <td>${ member.birthDate }</td>
+                  <td>${ member.createDate }</td>
+                  <td>${ member.expirationDate }</td>
+                  <td>${ member.remainCount }</td>
+                  <td>${ member.valid }</td>
+                </tr>
+              </c:forEach>
             </tbody>
           </table>
         </div>
