@@ -1,5 +1,4 @@
-package net.membermanager;
-
+package net.membermanager.membermanager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
