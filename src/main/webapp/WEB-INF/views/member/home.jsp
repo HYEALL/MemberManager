@@ -12,12 +12,12 @@
 
 <body>
     <header>
-      <h1 class="title"><a href="#"><img src="/img/aclimb.png"></a></h1>
+      <h1 class="title"><a href="home"><img src="/img/aclimb.png"></a></h1>
     </header>
     <div class="container">
       <nav>
         <span class="pageName">회원관리</span>
-        <a href="detail.jsp"><button type="sumbit" class="signUp">신규회원등록</button></a>
+        <a href="detail"><button type="sumbit" class="signUp">신규회원등록</button></a>
         <input type="sumbit" class="search">
         <button type="sumbit" class="searchBtn">검색</button>
         <hr class ="hr1">
@@ -38,7 +38,7 @@
             </thead>
             <tbody>
               <c:forEach var="member" items="${ members }">
-                <tr>
+                <tr onclick="location.href='edit?id=${ member.id }'">
                   <td>${ member.id }</td>
                   <td>${ member.name }</td>
                   <td>${ member.birthDate }</td>
