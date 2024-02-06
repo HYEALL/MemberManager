@@ -17,7 +17,7 @@
     <div class="container">
       <nav>
         <span class="pageName">회원관리</span>
-        <a href="detail"><button type="sumbit" class="signUp">신규회원등록</button></a>
+        <a href="create"><button type="sumbit" class="signUp">신규회원등록</button></a>
         <input type="sumbit" class="search">
         <button type="sumbit" class="searchBtn">검색</button>
         <hr class ="hr1">
