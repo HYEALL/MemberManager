@@ -129,3 +129,8 @@ td {
 tr {
 	line-height: 2;
 }
+
+.error {
+	display:block;
+	margin-bottom: 40px;
+}

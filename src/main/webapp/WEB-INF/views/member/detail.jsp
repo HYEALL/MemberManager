@@ -26,19 +26,30 @@
           <h1 class="subtitle">${ member.id > 0 ? "기존회원정보수정" : "신규회원정보입력" }</h1>
 
           <div><label for="name" class="formlabel">이름</label> 
-          <form:input path="name" /></div>
+          <form:input path="name" />
+          <form:errors path="name" class="error" />
+          </div>
+          
 
 			    <div><label for="birthDate" class="formlabel">생년월일</label> 
-          <form:input type="date" path="birthDate" /></div>
+          <form:input type="date" path="birthDate" />
+          <form:errors path="birthDate" class="error" />
+          </div>
 
           <div><label for="createDate" class="formlabel">가입일</label> 
-          <form:input type="date" path="createDate" /></div>
+          <form:input type="date" path="createDate" />
+          <form:errors path="createDate" class="error" />
+          </div>
 
           <div><label for="expirationDate" class="formlabel">회원권만료일</label> 
-          <form:input type="date" path="expirationDate" /></div>
+          <form:input type="date" path="expirationDate" />
+          <form:errors path="expirationDate" class="error" />
+          </div>
 
           <div><label for="remainCount" class="formlabel">잔여횟수권</label> 
-          <form:input path="remainCount" /></div>
+          <form:input path="remainCount" />
+          <form:errors path="remainCount" class="error" />
+          </div>
 
           <input type="submit" value="저장" class="save">
         </form:form>

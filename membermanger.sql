@@ -7,7 +7,7 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,  
 birthDate DATE NOT NULL, 
 createDate DATE NOT NULL, 
-expirationDate DATE, 
+expirationDate DATE NOT NULL, 
 remainCount INT, 
 valid BOOLEAN DEFAULT TRUE
 );
